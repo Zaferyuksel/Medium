@@ -2,13 +2,33 @@ body {
     font-family: 'PT Serif', serif;
 }
 .navrenk {
-    background-color: #ffc045; 
+    background-color: #FF6347; 
 }
 .border-botton-dark {
     border-bottom: 1px solid #222222;
 }
-.karbox {
-    width: 100%;
+
+
+#karbox {
     height: 50vh;
-    
+    background-color: #FF6347;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.letter {
+    position: absolute;
+    top: -100px;
+    animation: rain 5s linear infinite;
+}
+
+@keyframes rain {
+    0% {
+        top: -55px;
+    }
+    100% {
+        top: 50vh;
+    }
 }
