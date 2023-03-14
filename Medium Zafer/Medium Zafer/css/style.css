@@ -45,3 +45,6 @@ p {
 strong{
     color: black;
 }
+.menu{
+    display: none;
+}

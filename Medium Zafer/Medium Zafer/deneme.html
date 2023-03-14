@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Menü Örneği</title>
+	<style>
+		/* Menüyü sarmalayacak olan div'in stilini belirliyoruz */
+		.menu {
+			display: none; /* menüyü başlangıçta gizliyoruz */
+			position: absolute; /* menünün yerini belirlemek için kullanıyoruz */
+			top: 30px; /* menünün yüksekliğini belirliyoruz */
+			left: 0; /* menünün sol tarafına yerleştiriyoruz */
+			padding: 10px; /* menü öğeleri arasında bir boşluk bırakıyoruz */
+			background-color: #fff; /* menü arkaplan rengi */
+			border: 1px solid #ccc; /* menü çerçeve rengi ve kalınlığı */
+			z-index: 1; /* menüyü diğer öğelerin üzerine yerleştiriyoruz */
+		}
+		
+		/* Menü öğelerinin stilini belirliyoruz */
+		.menu-item {
+			display: block; /* öğeleri blok olarak ayarlıyoruz */
+			margin-bottom: 5px; /* öğeler arasında bir boşluk bırakıyoruz */
+		}
+	</style>
+</head>
+<body>
+	<!-- Butonumuz -->
+	<button onclick="toggleMenu()">Menüyü Aç/Kapat</button>
+	
+	<!-- Menü -->
+	<div class="menu">
+		<!-- Menü öğeleri -->
+		<input type="text" placeholder="Öğe 1">
+		<input type="text" placeholder="Öğe 2">
+		<input type="text" placeholder="Öğe 3">
+		<input type="text" placeholder="Öğe 4">
+	</div>
+
+	<!-- JavaScript -->
+	<script>
+		// Menüyü açıp kapamak için bir fonksiyon oluşturuyoruz
+		function toggleMenu() {
+			var menu = document.querySelector('.menu');
+			if (menu.style.display === 'block') {
+				menu.style.display = 'none';
+			} else {
+				menu.style.display = 'block';
+			}
+		}
+	</script>
+</body>
+</html>
