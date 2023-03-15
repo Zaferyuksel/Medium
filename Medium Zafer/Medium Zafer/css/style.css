@@ -33,7 +33,7 @@ body {
     }
 }
 #writenav{
-    background-color: bisque;
+    background-color: #FFA500;
 }
 a{
     text-decoration: none;
@@ -47,4 +47,15 @@ strong{
 }
 .menu{
     display: none;
+}
+#wr{
+    border-color: #222222;
+    box-shadow: 1px 1px 1px #A52A2A;
+}
+#exampleFormControlTextarea1{
+    box-shadow: 1px 1px 1px #A52A2A;
+    border-color: #222222;
+}
+#s{
+    background-color: hsl(94, 43%, 86%);
 }

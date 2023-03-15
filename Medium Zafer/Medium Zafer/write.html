@@ -9,9 +9,9 @@
 
     <title>Document</title>
 </head>
-<body>
+<body id="s">
     <!-- Navbar Başlangıç -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="position-relative" >
             <nav class="navbar navbar-expand-lg" id="writenav">
                 <div class="container-fluid">
@@ -26,8 +26,8 @@
                                 User
                                 </a>
                                 <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item" href="#">Medium</a></li>
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="/">Medium</a></li>
+                                    <li><a class="dropdown-item" href="/profil.html">Profile</a></li>
                                     <li><a class="dropdown-item" href="#">Sing out</a></li>
                                 </ul>
                         </li>
@@ -40,18 +40,18 @@
     <!-- Navbar Bitiş -->
 
     <form action="">
-        <div class="container mt-5">
+        <div class="container mt-5">    
             <div class="row">
                 <div class="col">
-                    <input class="form-control form-control-lg " type="text" placeholder="Title" aria-label=".form-control-lg example">
-                    <input class="form-control mt-3" type="text" placeholder="Subject or Description" aria-label="default input example">
+                    <input class="form-control form-control-lg " id="wr" type="text" placeholder="Title" aria-label=".form-control-lg example">
+                    <input class="form-control mt-3" type="text" id="wr" placeholder="Subject or Description" aria-label="default input example">
                     <div class="mb-3 ">
                         <label for="exampleFormControlTextarea1" class="form-label"></label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
                     </div>
                     <div class="mb-3">
                         <label for="formFile" class="form-label"></label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input style="border-color: black;" class="form-control" type="file" id="formFile">
                     </div>
                     <button type="button" class="btn btn-success btn-rounded mb-4">Publish</button>
                 </div>
